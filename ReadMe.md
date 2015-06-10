@@ -1,0 +1,1 @@
+The main goal of this script is to determine karma breakdown and subreddits a user frequents. Goal is to merge this into one of my other reddit scripts, or my SocialMedia scraper project once I start it.
