@@ -1,0 +1,5 @@
+#!/usr/bin/env python 
+
+import praw
+r = praw.Reddit(user_agent='Test Script by /u/bboe')
+r.login('username', 'password')
