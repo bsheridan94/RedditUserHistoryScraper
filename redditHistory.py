@@ -11,6 +11,11 @@ opts.add_option("--verbose", dest="verbose",action="store_true",default=False,he
 global options
 (options,args)=opts.parse_args()
 
+if len(args) != 1:
+        opts.print_usage()
+        sys.exit(1)
+
+
 userName = sys.argv[1]
 print userName
 
@@ -25,3 +30,4 @@ for thing in gen:
 	subreddit = thing.subreddit.display_name
 	karma_by_subreddit[subreddit] = (karma_by_subreddit.get(subreddit, 0) + thing.score)
 pprint.pprint(karma_by_subreddit)
+
